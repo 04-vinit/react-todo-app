@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.main_div {
+  height: 100vh;
+  width: 100%;
+  background-color: #64e3ed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.center_div {
+  width: 30%;
+  height: 80vh;
+  background-color: azure;
+  box-shadow: 5px 5px 25px -5px black;
+  border-radius: 20px;
+}
+h1 {
+  color: azure;
+  background: transparent;
+  /* text-shadow: 0 2px 2px black; */
+  background-color: rgb(205 18 151);
+  padding: 6px 0px 2px 0px;
+  margin-bottom: 10px;
+  box-shadow: 5px 5px 15px -5px black;
+}
+input {
+  text-align: center;
+  height: 30px;
+  top: 10px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 500;
+  width: 70%;
+  border-bottom: 2px solid rgb(75, 16, 133);
+  outline: none;
+}
+button {
+  min-height: 40px;
+  width: 40px;
+  border-radius: 90%;
+  border-color: transparent;
+  background-color: rgb(205 18 151);
+  color: #fff;
+  font-size: 35px;
+  border: none;
+  outline: none;
+  margin-left: 10px;
+  box-shadow: 5px 5px 15px -5px rgb(15, 9, 9);
+}
+button:hover {
+  background-color: rgb(106, 231, 17);
+}
+ol {
+  margin-top: 30px;
+}
+ol li {
+  padding-left: 0px;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 500;
+  min-height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items:left;
+  color: rgb(205 18 151);
+  text-transform: capitalize;
+  font-weight: bold;
+  background: transparent;
+  margin-left: 0px;
+  list-style-position:inside;
+}
+.todo-style {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-style .fa-times {
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(205 18 151);
+  border-radius: 50%;
+  margin: 0 15px 0 35px;
+  color: aliceblue;
+  box-shadow: 5px 5px 15px -5px black;
+}
+.todo-style .fa-times:hover {
+  background-color: crimson;
+}
+/* .todo-style .fa-times.list_style{
+  color: crimson;
+} */
+@media (max-width: 1000px) {
+  .center_div {
+    width: 30%;
+  }
+
+  
+}
+
+@media (max-width: 768px) {
+  .center_div {
+    width: 55%;
+  }
+
+  .todo-style .fa-times {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 15px 0 15px;
+  }
+  button{
+    margin-left: 5px;
+    min-height: 40px;
+    width: 40px;
+    color: #fff;
+    font-size: 30px;
+
+  }
+}
